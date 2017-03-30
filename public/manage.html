@@ -1,0 +1,70 @@
+<!--<div class="container">
+
+    
+
+    <div class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+
+            
+            <div class="checkbox" ng-repeat="book in books">
+                <label>
+                    <input type="checkbox" ng-click="deleteBook(book._id)"> {{ book.name }}
+                </label>
+            </div>
+
+        </div>
+    </div>
+</div>-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body, html{
+     height: 100%;
+ 	background-repeat: no-repeat;
+ 	background:url(img/gray.jpg);
+ 	font-family: 'Oxygen', sans-serif;
+	    background-size: cover;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+}
+
+
+</style>
+</head>
+<body>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Date</th>
+    <th>Time</th>
+    <th>Party Size</th> 
+    <th>Delete</th>
+  </tr>
+  <tr ng-repeat="book in books">
+  <td>{{ book.name }}</td>
+  <td>{{ book.email }}</td>
+  <td>{{ book.tel }}</td> 
+  <td>{{ book.date }}</td>
+  <td>{{ book.time }}</td>
+  <td>{{ book.size }}</td>
+  <td><input type="checkbox" ng-click="deleteBook(book._id)"></td>  
+      
+</tr>
+</table>
+
+</body>
+</html>

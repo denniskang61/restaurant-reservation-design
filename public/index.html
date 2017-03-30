@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to Kang's Chinese Buffet!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+    <link href="main.css" rel="stylesheet">
+
+     
+</head>
+<body ng-app = "main">
+
+<nav class="navbar navbar-light" style="background-color: black;">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand">Kang's Restaurant! All You Can Eat!</a>
+      </div>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li ><a href="#home"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+        <li><a href="#booking"><i class="fa fa-plus" aria-hidden="true"></i> Create Reservation</a></li>
+        <li><a href="#edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Reservation</a></li>
+        <li><a href="#/login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+        <li><a href="#home"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</a></li>  
+        <li><a href="#manage"><i class="fa fa-list" aria-hidden="true"></i> Manage</a></li>
+      </ul>
+    </div>
+  </nav>
+      
+    
+<div >
+    <ng-view></ng-view>
+</div>
+<script type="text/javascript" src="core.js"></script>
+</body>
+</html>

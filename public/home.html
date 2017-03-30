@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Content Slider</title>
+		<link rel="stylesheet" href="main.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+		<script src="slide.js"></script>
+        <style>
+           body, html{
+             height: 100%;
+ 	         background-repeat: no-repeat;
+ 	         background:url(img/black.jpg);
+ 	         font-family: 'Oxygen', sans-serif;
+	         background-size: cover;
+            }
+            
+            h1{
+                color: beige
+            }
+</style>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<h1> Welcome To Kang's Restaurant! </h1>
+			</header>
+			<img src="img/arrow-left.png" alt="Prev" id="prev">
+			<div id="slider">
+				<div class="slide">
+					<img src="img/1.jpg">
+				</div>
+				
+				<div class="slide">
+					<img src="img/2.jpg">
+				</div>
+				
+				<div class="slide">
+					<img src="img/3.jpg">
+				</div>
+				
+				<div class="slide">
+					<img src="img/4.jpg">
+				</div>
+				
+				<div class="slide">
+					<img src="img/5.jpg">
+				</div>
+			</div>
+			<img src="img/arrow-right.png" alt="Next" id="next">
+		</div>
+	</body>
+</html>

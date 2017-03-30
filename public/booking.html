@@ -1,0 +1,88 @@
+
+<div class="container">
+			<div class="row main">
+				<div class="main-login main-center">
+				
+					<form>
+
+						<div class="form-group">
+							<label for="name" class="cols-sm-2 control-label">Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" placeholder="Enter your name" ng-model="reservation.name" required/>
+								</div>
+							</div>
+						</div>
+                        
+                        <div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Email</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope-o fa" aria-hidden="true"></i></span>
+									<input type="email" class="form-control" placeholder="Enter your email" ng-model="reservation.email" required/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="phone" class="cols-sm-2 control-label">Phone</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-phone fa" aria-hidden="true"></i></span>
+									<input type="tel" class="form-control" ng-model="reservation.tel" required/>
+								</div>
+							</div>
+						</div>
+                        
+                        <div class="form-group">
+							<label for="date" class="cols-sm-2 control-label">Date</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-calendar fa-lg" aria-hidden="true"></i></span>
+									<input type="date" class="form-control" ng-model="reservation.date" required/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="time" class="cols-sm-2 control-label">Time</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-clock-o fa-lg" aria-hidden="true"></i></span>
+									<input type="time" class="form-control" ng-model="reservation.time" required/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="size" class="cols-sm-2 control-label">Party Size</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<select class="form-control" id="party size" ng-model="reservation.size" required>
+                                       <option>1 person</option>
+                                       <option>2 person</option>
+                                       <option>3 person</option>
+                                       <option>4 person</option>
+                                       <option>5 person</option>
+                                       <option>6 person</option>
+                                       <option>7 person</option>
+                                       <option>8 person</option>
+                                       <option>9 person</option>
+                                       <option>larger party</option>
+                                    </select>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group ">
+							<button class="btn btn-lg btn-default btn-block" type="submit" ng-click="createReservation()">Create</button>
+						</div>
+					</form>
+                    <div class="row">
+                         <h5 style="text-align: center;">Your confirmation code shows here</h5>
+                        </div>
+                        <div style="text-align: center;">{{confirmation}}</div>
+				</div>
+			</div>
+		</div>

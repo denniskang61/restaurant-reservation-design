@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery Content Slider</title>
+		<link rel="stylesheet" href="main.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+		<script src="slide.js"></script>
+        <style>
+           body, html{
+             height: 100%;
+ 	         background-repeat: no-repeat;
+ 	         background:url(img/Food-Hero-1260x600.jpg);
+ 	         font-family: 'Oxygen', sans-serif;
+	         background-size: cover;
+            }
+            
+            h1{
+                color: beige
+            }
+</style>
+	</head>
+	<body>
+<div class="container">
+			<div class="row main">
+				<div class="main-login main-center">
+				
+					<form>
+                        <div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Email</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope-o fa" aria-hidden="true"></i></span>
+									<input type="email" class="form-control" placeholder="Enter your email" ng-model="user.email" required/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="phone" class="cols-sm-2 control-label">Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-key fa" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" placeholder="Enter your password" ng-model="user.password" required/>
+								</div>
+							</div>
+						</div>
+						<div class="form-group ">
+							<button class="btn btn-lg btn-default btn-block" type="submit" ng-click="logIn()">Log In</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>
